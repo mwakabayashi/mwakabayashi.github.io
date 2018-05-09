@@ -4,41 +4,100 @@
   <title>Masakiのページ</title>
   <meta charset="UTF-8">
   <style>
+  body {
+    background:#8fbc8f url(img/mountain.png) no-repeat bottom right fixed;
+  }
   .photo{
     width:450px;
+    align-content: center;
     border:dotted #20b2aa 10px;
   }
   .title{
     color:#228b22;
     text-align:center;
+    position:relative;
+    top: 50px;
+    font-size: 200px;
     text-decoration-style:dotted;
     font-family:"Times New Roman";
   }
   .header{
-    color:#66cdaa;
+    color:#f5fffa;
     text-align:center;
   }
   .description{
-    color:	#696969;
+    color:	#b8860b;
     text-decoration:underline;
   }
   .notYet{
     cursor:not-allowed;
   }
+  .pptObjects{
+    background-image: image("img/DSC_0113");
+    background-size: cover;
+    width: auto;
+    height: inherit;
+  }
+  .button1{
+    color:#228b22;
+    position:relative;
+    bottom:50px;
+    right:280px;
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    font-size: 20px;
+  }
+  .button2{
+    color:#228b22;
+    position:relative;
+    bottom:250px;
+    left:125px;
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    font-size: 20px;
+  }
+  .button3{
+    color:#228b22;
+    position:relative;
+    bottom:400px;
+    left:220px;
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    font-size: 20px;
+  }
+  .button4{
+    color:#228b22;
+    position:relative;
+    bottom:100px;
+    left: 20px;
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    font-size: 20px;
+  }
   </style>
 </head>
 <body class="body">
-  <h1 class="title">Masaki Wakabayashi</h1>
-  <nav>
-      <ul>
-        <li><a href="https://mwakabayashi.github.io/">Home</a></li>
-        <li><a href="https://mwakabayashi.github.io/Member.html">Our team</a></li>
-        <li><a href="https://mwakabayashi.github.io/Project.html">Projects</a></li>
-        <li class="notYet"><a href="#">Contact</a></li>
-      </ul>
-     </nav>
-  <h2 class="header">Hello, world</h2>
-  <img src="img/DSC_0113.jpg" alt="Dali Night" class="photo">
+  <h1 class="title">Hello world</h1>
+  <div class="background">
+    <img src="img/pianokey.png" alt="pianoKey" class="pptObjects">
+    <!-- <button class="button1">京都</button>
+    <button class="button2">奈良</button>
+    <button class="button3">熊野</button>-->
+    <form>
+    <input class = "button4" type="button" value="京都" onclick="window.location.href = 'https://mwakabayashi.github.io/Kyoto1804.html'"/>
+    </form>
+    <form>
+    <input class = "button2" type="button" value="奈良" onclick="window.location.href = 'https://mwakabayashi.github.io/Nara1804.html'"/>
+    </form>
+    <form>
+    <input class = "button3" type="button" value="熊野" onclick="window.location.href = 'https://mwakabayashi.github.io/Kumano1804.html'"/>
+    </form>
+  </div>
+
   <p class="description">Hello, I took this photo in Dali, Yunnan, China in 2017.</p>
   <p class="description">I`m Masaki Wakabayashi, my interest is programing and in spare time I would like to travel. Here I put some photos I took in my trip since 2017</p>
   <h2 class="header">Diary</h2>
@@ -46,6 +105,6 @@
   <h2 class="header">Photos</h2>
   <bouton>Kyoto!</bouton>
   <a href="https://mwakabayashi.github.io/KyotoNara.html">Kyoto and Nara</a>
-  <p class="description">I went to Kyoto, Shiga, Wakabayama, Mie, and Nara in April 2018. Those areas are my hometown, but I had never been to that deep area and unfamiliar to those. I went there using cheap train tickets and walked a lot in mountains including Yoshino and Kumano.</p>
+  <p class="description">I went to Kyoto, Shiga, Wakayama, Mie, and Nara in April 2018. Those areas are my hometown, but I had never been to that deep area and unfamiliar to those. I went there using cheap train tickets and walked a lot in mountains including Yoshino and Kumano.</p>
 </body>
 </html>
